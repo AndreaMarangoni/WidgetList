@@ -7,6 +7,8 @@
 
 #include "FloatingWidgetList.h"
 
+#include <QVBoxLayout>
+
 FloatingWidgetList::FloatingWidgetList(QWidget *parent) :
 	QWidget(parent),
 	layout_(new QVBoxLayout(this)) {

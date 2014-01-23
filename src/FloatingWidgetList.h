@@ -9,7 +9,8 @@
 #define FLOATINGWIDGETLIST_H_
 
 #include <QWidget>
-#include <QVBoxLayout>
+
+class QVBoxLayout;
 
 class FloatingWidgetList: public QWidget {
 Q_OBJECT
