@@ -6,13 +6,15 @@
  */
 
 #include "WidgetList.h"
+#include "ListWidget.h"
 
-WidgetList::WidgetList() {
-	// TODO Auto-generated constructor stub
-
+WidgetList::WidgetList(ListWidget* listOfWidget, QWidget* parent) :
+	QScrollArea(parent),
+	list_(listOfWidget) {
+	this->setWidget(list_);
+	this->setWidgetResizable(true);
 }
 
 WidgetList::~WidgetList() {
-	// TODO Auto-generated destructor stub
 }
 

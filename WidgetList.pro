@@ -8,11 +8,11 @@ QT += core \
 
 # Input
 SOURCES += src/main.cpp \
-		   src/ScrollArea.cpp \
-		   src/FloatingWidgetList.cpp
+		   src/WidgetList.cpp \
+		   src/ListWidget.cpp
 		   
-HEADERS += src/ScrollArea.h \
-		   src/FloatingWidgetList.h
+HEADERS += src/WidgetList.h \
+		   src/ListWidget.h
 FORMS = 
 RESOURCES = 
 TRANSLATIONS = 

@@ -10,23 +10,14 @@
 
 #include <qscrollarea.h>
 
+class ListWidget;
+
 class WidgetList: public QScrollArea {
 public:
-	WidgetList();
+	WidgetList(ListWidget* listOfWidget, QWidget* parent = 0);
 	virtual ~WidgetList();
-
-	void addWidget(QWidget* widget, int stretch = 0, Qt::Alignment alignment = 0);
-	void insertWidget(int index, QWidget* widget, int stretch = 0,
-		Qt::Alignment alignment = 0);
-
-	void removeWidget(QWidget* widget);
-
-	QList<QWidget*> getListWidget() const;
-	QWidget* getWidget(int index) const;
-	int count() const;
-
 private:
-	QVBoxLayout* layout_;
+	ListWidget* list_;
 };
 
 #endif /* WIDGETLIST_H_ */
