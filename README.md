@@ -1,4 +1,4 @@
 WidgetList
 ===========
 
-A scrollable widget to contain custom widgets.
+A vertically scrollable widget to contain custom widgets.
