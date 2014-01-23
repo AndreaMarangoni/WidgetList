@@ -1,5 +1,7 @@
-QWidgetList
+WidgetList
+debug
 Debug
+release
 Release
 .project
 .settings

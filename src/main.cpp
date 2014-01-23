@@ -5,7 +5,7 @@
  *      Author: andy
  */
 
-#include <QApplication>
+#include <qapplication.h>
 
 #define RESTART_APPLICATION_RETURN 5
 
