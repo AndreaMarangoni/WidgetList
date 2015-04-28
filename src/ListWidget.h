@@ -1,10 +1,3 @@
-/*
- * ListWidget.h
- *
- *  Created on: Jan 23, 2014
- *      Author: andy
- */
-
 #ifndef LISTWIDGET_H_
 #define LISTWIDGET_H_
 

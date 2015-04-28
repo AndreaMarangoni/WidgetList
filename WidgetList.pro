@@ -3,17 +3,18 @@ TARGET = WidgetList
 DEPENDPATH += . src
 INCLUDEPATH += ../
 
-QT += core \
-    gui
+QT += core gui widgets
 
 # Input
-SOURCES += src/main.cpp \
-		   src/WidgetList.cpp \
-		   src/ListWidget.cpp
+SOURCES += \
+src/main.cpp \
+src/WidgetList.cpp \
+src/ListWidget.cpp
 		   
-HEADERS += src/WidgetList.h \
-		   src/ListWidget.h
+HEADERS += \
+src/WidgetList.h \
+src/ListWidget.h
+
 FORMS = 
 RESOURCES = 
 TRANSLATIONS = 
-DEFINES += DEBUG

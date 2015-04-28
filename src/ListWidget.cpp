@@ -1,17 +1,12 @@
-/*
- * ListWidget.cpp
- *
- *  Created on: Jan 23, 2014
- *      Author: andy
- */
+#include <QVBoxLayout>
 
 #include "ListWidget.h"
-
-#include <QVBoxLayout>
 
 ListWidget::ListWidget(QWidget *parent) :
 	QWidget(parent),
 	layout_(new QVBoxLayout(this)) {
+    layout_->setContentsMargins(0, 0, 0, 0);
+    layout_->setSpacing(0);
 	this->setLayout(layout_);
 }
 
@@ -25,7 +20,7 @@ void ListWidget::addWidget(QWidget* widget, int stretch,
 
 void ListWidget::insertWidget(int index, QWidget* widget, int stretch,
 	Qt::Alignment alignment) {
-	layout_->QVBoxLayout::insertWidget(index, widget, stretch, alignment);
+    layout_->QVBoxLayout::insertWidget(index, widget, stretch, alignment);
 }
 
 void ListWidget::removeWidget(QWidget* widget) {
